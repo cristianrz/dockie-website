@@ -6,42 +6,51 @@
   <meta name="generator" content=
   "HTML Tidy for HTML5 for Linux version 5.6.0">
   <meta charset="utf-8">
+  <meta name="viewport" content=
+  "width=device-width, initial-scale=1.0">
   <title>Dockie</title>
+  <link rel="stylesheet" href="normalize.css">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="full dark">
-    <div class="container navbar">
-      <div class="valign">
-        <p class="logo">dockie</p>
+  <div class="dark">
+    <div class="valign container navbar">
+      <p class="logo">dockie</p>
+      <p><a href="#menu-open"><img alt="navbar-toggle" class=
+      "navbar-toggle" src="images/menu.png"></a></p>
+    </div>
+    <div id="menu-open">
+      <div class="valign container navbar">
+        <div class="col">
+          <p class="logo"></p>
+        </div>
+        <div class="col">
+          <a href="#"><img alt="navbar-toggle" class=
+          "navbar-toggle" tabindex="0" src="images/menu.png"></a>
+        </div>
       </div>
-      <div class="right menu valign">
-        <div class="col">
-          <a href="#features">Docs</a>
-        </div>
-        <div class="col">
-          <a href=
-          "https://github.com/cristianrz/dockie/releases">Download</a>
-        </div>
-        <div class="col">
-          <a href="https://github.com/cristianrz/dockie">Source</a>
-        </div>
-        <div class="col">
-          <a href=
-          "https://github.com/cristianrz/dockie-hub">Hub</a>
-        </div>
+      <div class="navbar navbar-open container right menu">
+        <p><a href=
+        "https://github.com/cristianrz/dockie/wiki">Docs</a></p>
+        <p><a href=
+        "https://github.com/cristianrz/dockie/releases">Download</a></p>
+        <p><a href=
+        "https://github.com/cristianrz/dockie-hub">Hub</a></p>
+        <p><a href=
+        "https://github.com/cristianrz/dockie">Source</a></p>
       </div>
     </div>
-    <div class="hero center">
+    <div class="full hero center">
       <img alt="silouette" src="images/whale_white.png">
-      <h1>User-space jails the fast way</h1><a href=
+      <h1>User-space jails the fast way</h1>
+      <p><a href=
       "https://github.com/cristianrz/dockie/wiki/Getting-started"
-      class="button light">Get started</a>
+      class="button light">Get started</a></p>
     </div>
   </div>
   <div id="features" class="section">
     <div class="center container">
-      <div class="col-4 col-center">
+      <div class="col-center">
         <h2>PRoot wrapper</h2>
         <p>Dockie uses PRoot, a user-space implementation of
         "chroot", "mount --bind" and "binfmt_misc". This means that
@@ -53,7 +62,7 @@
   </div>
   <div class="section dark">
     <div class="center container">
-      <div class="col-4 col-center">
+      <div class="col-center">
         <h2>Simple</h2>
         <p>Dockie provides an easy workflow to manager different
         filesystems, making it easier create, run and destroy
@@ -63,7 +72,7 @@
   </div>
   <div class="section">
     <div class="center container">
-      <div class="col-4 col-center">
+      <div class="col-center">
         <h2>Dockie Hub</h2>
         <p>The Dockie Hub is the repository where you can find
         ready to pull system images. A single command will get your
@@ -73,7 +82,7 @@
   </div>
   <footer class="dark">
     <div class="container navbar">
-      <div class="col-1">
+      <div class="col-1 valign">
         <p class="logo">dockie</p>
       </div>
       <div class="col valign center">
