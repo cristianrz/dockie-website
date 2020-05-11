@@ -41,41 +41,61 @@
     <div class="full hero center">
       <img alt="silouette" src="images/whale_white.png">
       <h1>User-space environments the fast way</h1>
-      <p><a href=
-      "https://github.com/cristianrz/dockie/wiki/Installation"
-      class="button light">Get started</a></p>
+      <p><a href="https://github.com/cristianrz/dockie/wiki" class=
+      "button light getstarted">Get started</a></p>
     </div>
   </div>
-  <div id="features" class="section">
+  <div class="section">
     <div class="center container">
       <div class="col-center">
-        <h2>PRoot wrapper</h2>
-        <p>Dockie uses PRoot, a user-space implementation of
-        "chroot", "mount --bind" and "binfmt_misc". This means that
-        users don't need root privileges to use a directory as the
-        new root filesystem or executing programs built for a
-        different architecture.</p>
+        <h2>Quick</h2>
+        <p>Downloading a guest image from scratch and setting up a new
+        environment takes a single command:</p>
+        <div class="terminal">
+          <p>$ dockie run voidlinux:current /bin/bash</p>
+          <p>root@voidlinux #</p>
+        </div>
       </div>
     </div>
   </div>
   <div class="section dark">
     <div class="center container">
       <div class="col-center">
-        <h2>Simple</h2>
-        <p>Dockie provides an easy workflow to manager different
-        filesystems, making it easier create, run and destroy
-        different environments.</p>
+        <h2>Lightweight</h2>
+        <p>Dockie is made out of portable shell scripts and only
+        needs PRoot, a user-space implementation of chroot and
+        other utilities, to work.</p>
       </div>
     </div>
   </div>
   <div class="section">
     <div class="center container">
       <div class="col-center">
-        <h2>Image Hub</h2>
+        <h2>Unprivileged</h2>
+        <p>With PRoot and Dockie, users don't need
+        root privileges to use a guest filesystem or executing
+        programs built for a different architecture. This makes possible to
+				have a small guest running on top of a host for which root privileges
+				are not availble, with Android + Termux being an example.</p>
+      </div>
+    </div>
+  </div>
+  <div class="section dark">
+    <div class="center container">
+      <div class="col-center">
+        <h2>Remote Images</h2>
         <p>Dockie allows pulling images from the LXC image server
-        and Docker Hub with more thousands of images available! A
-        single command will get your preferred system up and
-        running in a matter of seconds.</p>
+        and Docker Hub with thousands of images available.</p>
+      </div>
+    </div>
+  </div>
+  <div class="section">
+    <div class="center container">
+      <div class="col-center">
+        <h2>Simple</h2>
+        <p>Dockie provides an easy workflow to manage different
+        filesystems, making it easier create, run and destroy
+        different environments.</p>
       </div>
     </div>
   </div>
