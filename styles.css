@@ -35,7 +35,7 @@ body {
 }
 
 h1 {
-	font-size: 2.6rem;
+	font-size: 2.2rem;
 	margin-top: 40px;
 	margin-bottom: 80px;
 	font-weight: bold;
@@ -57,7 +57,7 @@ h1 {
 
 .full {
 	height: 65vh;
-	min-height: 400px;
+	min-height: 550px;
 }
 
 .hero {
@@ -127,6 +127,7 @@ h1 {
 	margin-left: auto;
 	margin-right: auto;
 	max-width: 800px;
+	min-width: 100%;
 }
 
 .navbar {
@@ -142,8 +143,8 @@ h1 {
 }
 
 .section {
-	padding-top: 150px;
-	padding-bottom: 150px;
+	padding-top: 120px;
+	padding-bottom: 120px;
 	font-size: 1.4rem;
 	line-height: 2rem;
 }
@@ -206,16 +207,17 @@ a {
 .terminal {
 	background-color: #111;
 	border-radius: 10px;
-	margin-top: 50px;
-	margin-left: auto;
-	margin-right: auto;
-	/* max-width: 900px; */
-	padding: 20px 40px;
+	margin: 50px auto 0;
+	max-width: 550px;
+	padding-top: 30px;
+	padding-bottom: 30px;
 }
 
 .terminal p {
+	font-size: 1.2rem;
 	color: white;
-	margin: 10px;
+	margin: 0 10%;
 	font-family: monospace;
 	text-align: left;
+	max-width: 100%;
 }
