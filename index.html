@@ -42,7 +42,7 @@
     </div>
     <div class="full hero center">
       <img alt="silouette" src="images/whale_white.png">
-      <h1>User-space environments the fast way</h1>
+      <h1>User environments, the simple way</h1>
       <p><a href="https://github.com/cristianrz/dockie/wiki" class=
       "button light getstarted">Get started</a></p>
     </div>
@@ -50,7 +50,27 @@
   <div class="section">
     <div class="center container">
       <div class="col-center">
-        <h2>Quick</h2>
+        <h2>User environments should not be complex</h2>
+	<p>Dockie is made out of
+	portable shell scripts and uses PRoot, a user-space
+	implementation of chroot and other utilities.</p>
+      </div>
+    </div>
+  </div>
+  <div class="section dark">
+    <div class="center container">
+      <div class="col-center">
+	      <h2>User environments without root or daemons</h2>
+        <p>Dockie + PRoot users don't need root privileges to use a guest
+				filesystem or execute programs built for a different architecture. An
+				example where this is useful can be Android+Termux.</p>
+      </div>
+    </div>
+  </div>
+  <div class="section">
+    <div class="center container">
+      <div class="col-center">
+        <h2>Easy to create and destroy environments</h2>
         <p>Downloading a guest image from scratch and setting up a
         new environment takes a single command:</p>
         <div class="terminal">
@@ -63,32 +83,9 @@
   <div class="section dark">
     <div class="center container">
       <div class="col-center">
-        <h2>Remote Images</h2>
-        <p>Dockie allows pulling images from the LXC image server
+        <h2>Compatible with image repositories</h2>
+        <p>Dockie allows using images from the LXC image server
         and Docker Hub with thousands of images available.</p>
-      </div>
-    </div>
-  </div>
-  <div class="section">
-    <div class="center container">
-      <div class="col-center">
-        <h2>Unprivileged</h2>
-        <p>With PRoot and Dockie, users don't need root privileges
-        to use a guest filesystem or executing programs built for a
-        different architecture. This makes possible to have a small
-        guest running on top of a host for which root privileges
-        are not availble, with Android + Termux being an
-        example.</p>
-      </div>
-    </div>
-  </div>
-  <div class="section dark">
-    <div class="center container">
-      <div class="col-center">
-        <h2>Lightweight</h2>
-        <p>Dockie is made out of portable shell scripts and only
-        needs PRoot, a user-space implementation of chroot and
-        other utilities, to work.</p>
       </div>
     </div>
   </div>
@@ -103,6 +100,7 @@
     </div>
   </div>
   <footer class="dark">
+    <center>This site is free of cookies and javascript</center>
     <div class="container navbar">
       <div class="col-1 valign">
         <p class="logo">dockie</p>
